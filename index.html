@@ -6,10 +6,22 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/869px-Tux.svg.png">
+    <meta name="description" content="CV" />
+    <meta name="author" content="Marcelo Maia" />
 
-    <title>Resume - Start Bootstrap Theme</title>
+    <title>Curriculum Vitae - Marcelo Maia</title>
+    
+    <script
+    src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
+    >
+    </script>
+
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+        <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
+    />
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -78,6 +90,8 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards">Palestras</a>
+          </li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contributions">Contribuições</a>
           </li>
         </ul>
       </div>
@@ -345,7 +359,7 @@
         id="interests"
       >
         <div class="w-100">
-          <h2 class="mb-5">Interests</h2>
+          <h2 class="mb-5">Interesses</h2>
           <p>
             Apart from being a web developer, I enjoy most of my time being
             outdoors. In the winter, I am an avid skier and novice ice climber.
@@ -368,44 +382,39 @@
         id="awards"
       >
         <div class="w-100">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
+          <h2 class="mb-5">Palestras</h2>
           <ul class="fa-ul mb-0">
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer
+              Feira do empreendedor Fair SEBRAE-PA - 2018
+              <li>Palestra sobre chatbots.</li>
             </li>
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification
+              Forum Internacional de Software Livre (FISL) - 2016
+              <li>Hardware e Software livre para monitoramento de poluição do ar.</li>
             </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup> Place - University of Colorado Boulder - Emerging
-              Tech Competition 2009
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup> Place - University of Colorado Boulder - Adobe
-              Creative Jam 2008 (UI Design Category)
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              2<sup>nd</sup> Place - University of Colorado Boulder - Emerging
-              Tech Competition 2008
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup> Place - James Buchanan High School - Hackathon 2006
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              3<sup>rd</sup> Place - James Buchanan High School - Hackathon 2005
-            </li>
+            
           </ul>
         </div>
       </section>
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="contributions"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Contribuições</h2>
+          <div class="calendar">
+            Contribuições no github...
+          </div>   
+        </div>
+      </section>
     </div>
-
+    <script>
+      // GitHubCalendar(".calendar", "your-username");
+      // or enable responsive functionality:
+      GitHubCalendar(".calendar", "marcelomaia");
+  </script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
